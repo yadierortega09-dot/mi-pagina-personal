@@ -32,18 +32,11 @@ body {
   color: #222;
   margin: 40px;
 }
-.btn {
-  display: inline-block;
-  background-color: #0078d7;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #005fa3;
+h1 {
+  color: #0d47a1; /* Azul oscuro */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .btn {
   display: inline-block;
@@ -66,3 +59,7 @@ body {
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   padding: 30px;
 }
+
+
+
+

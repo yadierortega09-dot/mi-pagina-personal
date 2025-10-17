@@ -1,36 +1,45 @@
-function mostrarSaludoPersonalizado() {
-  let nombre = prompt("¿Cómo te llamas?");
-  let hora = new Date().getHours();
+// --- Funciones básicas de interacción --- //
 
-  if (nombre) {
-    if (hora < 12) {
-      alert("Buenos días, " + nombre + " ☀️");
-    } else if (hora < 18) {
-      alert("Buenas tardes, " + nombre + " 🌤️");
-    } else {
-      alert("Buenas noches, " + nombre + " 🌙");
-    }
-  } else {
-    alert("No ingresaste tu nombre 😅");
-  }
-}
-let zona = document.getElementById("zona");
-
-zona.onmouseover = function() {
-  zona.style.backgroundColor = "lightblue";
-  zona.textContent = "¡Estás encima! 😎";
-};
-
-zona.onmouseout = function() {
-  zona.style.backgroundColor = "lightgray";
-  zona.textContent = "Pasa el ratón por aquí 👇";
-};
+// 1. Mostrar un mensaje personalizado al hacer clic
 function saludar() {
-  let nombre = document.getElementById("nombre").value;
-  if (nombre.trim() === "") {
-    alert("Por favor, escribe tu nombre 😊");
+  alert("¡Hola Yadier! 👋 Bienvenido a tu página interactiva.");
+}
+
+// 2. Cambiar el color de fondo
+document.querySelector("body").style.backgroundColor = colorAleatorio;
+
+function cambiarColor() {
+  console.log("✅ Botón de color presionado");
+  const colores = ["#3498db", "#2ecc71", "#f39c12", "#e74c3c", "#9b59b6"];
+  const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+  document.body.style.backgroundColor = colorAleatorio;
+}
+
+  const colores = ["#3498db", "#2ecc71", "#f39c12", "#e74c3c", "#9b59b6"];
+  const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+  document.body.style.backgroundColor = colorAleatorio;
+
+
+// 3. Mostrar la fecha y hora actual
+function mostrarFecha() {
+  const fecha = new Date();
+  alert(`📅 Hoy es ${fecha.toLocaleDateString()} y la hora es ${fecha.toLocaleTimeString()}`);
+}
+// --- Nueva función: cambiar texto principal --- //
+function cambiarTexto() {
+  const nuevoTexto = prompt("Escribe el nuevo título para tu página:");
+  const titulo = document.getElementById("titulo");
+  if (nuevoTexto) {
+    titulo.textContent = nuevoTexto;
   } else {
-    alert("¡Hola " + nombre + "! Bienvenido a mi página 💻");
+    alert("No escribiste nada 😅");
   }
 }
+
+
+
+
+
+
+
 
