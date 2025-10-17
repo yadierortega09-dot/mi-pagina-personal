@@ -1,49 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Sobre mí</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Personal</title>
   <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
+  <h1 id="titulo">¡Hola, soy Yadier! 👋</h1>
+  <p>Bienvenido a mi primera página web. Aquí voy aprendiendo paso a paso 💻✨</p>
 
-    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Foto de perfil" width="150">
+  <div class="botones">
+    <button onclick="saludar()">👋 Salúdame</button>
+    <button onclick="mostrarFecha()">📅 Mostrar fecha</button>
+    <button onclick="cambiarColor()">🎨 Cambiar color de fondo</button>
+    <button onclick="mostrarMensaje()">💬 Mostrar mensaje</button>
+    <button onclick="contacto()">📧 Contacto</button>
+  </div>
 
-<h1 id="titulo">¡Bienvenido a mi web!</h1>
-
-<button onclick="cambiarColor()">🎨 Cambiar color de fondo</button>
-<button onclick="cambiarTexto()">📝 Cambiar texto principal</button>
-<button onclick="saludar()">👋 Mostrar saludo</button>
-<button onclick="mostrarFecha()">⏰ Mostrar fecha y hora</button>
-
-<script src="script.js"></script>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Git y GitHub</li>
-  <li>Trabajo en equipo</li>
-</ul>
-<a href="https://github.com/" target="_blank" class="btn">Visita mi GitHub</a>
-
-<h2>🎯 Objetivos</h2>
-<ol>
-  <li>Convertirme en desarrollador web profesional</li>
-  <li>Aprender nuevas tecnologías</li>
-  <li>Crear proyectos útiles y bonitos</li>
-</ol>
-
-<h2>📞 Contacto</h2>
-<p>Puedes encontrarme en <a href="https://github.com/" target="_blank">GitHub</a></p>
-
-</p>
-<p id="mensaje">Hola, bienvenido a mi web personal 👋</p>
-<button onclick="cambiarColor()">🎨 Cambiar color de fondo</button>
-
-<script src="script.js"></script>
-  </body>
-  <div id="zona" style="padding: 40px; text-align:center; background-color: rgb(172, 146, 146);">
-  Pasa el ratón por aquí 👇
-</div>
+  <script src="script.js"></script>
+</body>
 </html>
-
